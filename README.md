@@ -1,2 +1,4 @@
 # Esoteric 
-Group 2 App
+Group 3 App
+
+Elisa, Alexia, Elaine
