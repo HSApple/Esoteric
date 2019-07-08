@@ -1,2 +1,2 @@
-# esoteric_group
+# Esoteric 
 Group 2 App
