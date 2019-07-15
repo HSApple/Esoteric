@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB1B36E22DCD45800352BE7 /* WorkorNahController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */; };
+		3FB1B37022DCD49200352BE7 /* ForWorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B36F22DCD49200352BE7 /* ForWorkingController.swift */; };
+		3FB1B37222DCD4E500352BE7 /* ForNonWorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37122DCD4E500352BE7 /* ForNonWorkingController.swift */; };
+		3FB1B37422DCD50400352BE7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37322DCD50400352BE7 /* MainController.swift */; };
+		3FB1B37622DCDA2100352BE7 /* AddingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37522DCDA2100352BE7 /* AddingController.swift */; };
+		3FB1B37822DCDA3A00352BE7 /* SubtractingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37722DCDA3A00352BE7 /* SubtractingController.swift */; };
+		3FB1B37A22DCDFEE00352BE7 /* MoreTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37922DCDFEE00352BE7 /* MoreTabController.swift */; };
+		3FB1B37C22DCE1EE00352BE7 /* SavingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37B22DCE1EE00352BE7 /* SavingsController.swift */; };
+		3FB1B37E22DCE56A00352BE7 /* AddSavingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37D22DCE56A00352BE7 /* AddSavingsController.swift */; };
+		3FB1B38022DCE9DC00352BE7 /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37F22DCE9DC00352BE7 /* TransactionsController.swift */; };
+		3FB1B38222DCEB7600352BE7 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B38122DCEB7600352BE7 /* CategoriesController.swift */; };
+		3FB1B38422DCEBE800352BE7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B38322DCEBE800352BE7 /* SettingsController.swift */; };
+		3FB1B38622DCEDDB00352BE7 /* ReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */; };
 		3FCB5F8222D62994001953E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F8122D62994001953E9 /* AppDelegate.swift */; };
 		3FCB5F8422D62994001953E9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F8322D62994001953E9 /* FirstViewController.swift */; };
 		3FCB5F8622D62994001953E9 /* CodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F8522D62994001953E9 /* CodeController.swift */; };
@@ -19,6 +32,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorNahController.swift; sourceTree = "<group>"; };
+		3FB1B36F22DCD49200352BE7 /* ForWorkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForWorkingController.swift; sourceTree = "<group>"; };
+		3FB1B37122DCD4E500352BE7 /* ForNonWorkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForNonWorkingController.swift; sourceTree = "<group>"; };
+		3FB1B37322DCD50400352BE7 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		3FB1B37522DCDA2100352BE7 /* AddingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingController.swift; sourceTree = "<group>"; };
+		3FB1B37722DCDA3A00352BE7 /* SubtractingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractingController.swift; sourceTree = "<group>"; };
+		3FB1B37922DCDFEE00352BE7 /* MoreTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabController.swift; sourceTree = "<group>"; };
+		3FB1B37B22DCE1EE00352BE7 /* SavingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsController.swift; sourceTree = "<group>"; };
+		3FB1B37D22DCE56A00352BE7 /* AddSavingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSavingsController.swift; sourceTree = "<group>"; };
+		3FB1B37F22DCE9DC00352BE7 /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
+		3FB1B38122DCEB7600352BE7 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		3FB1B38322DCEBE800352BE7 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderController.swift; sourceTree = "<group>"; };
 		3FCB5F7E22D62994001953E9 /* schmoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schmoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCB5F8122D62994001953E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCB5F8322D62994001953E9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +94,19 @@
 				3FCB5F8522D62994001953E9 /* CodeController.swift */,
 				3FCB5F9722D6307C001953E9 /* NewPasswordController.swift */,
 				3FCB5F9B22D630BE001953E9 /* SignUpController.swift */,
+				3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */,
+				3FB1B36F22DCD49200352BE7 /* ForWorkingController.swift */,
+				3FB1B37122DCD4E500352BE7 /* ForNonWorkingController.swift */,
+				3FB1B37322DCD50400352BE7 /* MainController.swift */,
+				3FB1B37522DCDA2100352BE7 /* AddingController.swift */,
+				3FB1B37722DCDA3A00352BE7 /* SubtractingController.swift */,
+				3FB1B37922DCDFEE00352BE7 /* MoreTabController.swift */,
+				3FB1B37B22DCE1EE00352BE7 /* SavingsController.swift */,
+				3FB1B37D22DCE56A00352BE7 /* AddSavingsController.swift */,
+				3FB1B37F22DCE9DC00352BE7 /* TransactionsController.swift */,
+				3FB1B38122DCEB7600352BE7 /* CategoriesController.swift */,
+				3FB1B38322DCEBE800352BE7 /* SettingsController.swift */,
+				3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */,
 				3FCB5F8722D62994001953E9 /* Main.storyboard */,
 				3FCB5F8A22D62995001953E9 /* Assets.xcassets */,
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
@@ -147,11 +186,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB1B38622DCEDDB00352BE7 /* ReminderController.swift in Sources */,
+				3FB1B38422DCEBE800352BE7 /* SettingsController.swift in Sources */,
 				3FCB5F8622D62994001953E9 /* CodeController.swift in Sources */,
+				3FB1B37022DCD49200352BE7 /* ForWorkingController.swift in Sources */,
 				3FCB5F9622D62F89001953E9 /* RestPassControllerViewController.swift in Sources */,
+				3FB1B37622DCDA2100352BE7 /* AddingController.swift in Sources */,
+				3FB1B38022DCE9DC00352BE7 /* TransactionsController.swift in Sources */,
+				3FB1B38222DCEB7600352BE7 /* CategoriesController.swift in Sources */,
 				3FCB5F9822D6307C001953E9 /* NewPasswordController.swift in Sources */,
+				3FB1B37422DCD50400352BE7 /* MainController.swift in Sources */,
 				3FCB5F8222D62994001953E9 /* AppDelegate.swift in Sources */,
+				3FB1B37E22DCE56A00352BE7 /* AddSavingsController.swift in Sources */,
+				3FB1B36E22DCD45800352BE7 /* WorkorNahController.swift in Sources */,
+				3FB1B37822DCDA3A00352BE7 /* SubtractingController.swift in Sources */,
+				3FB1B37222DCD4E500352BE7 /* ForNonWorkingController.swift in Sources */,
 				3FCB5F8422D62994001953E9 /* FirstViewController.swift in Sources */,
+				3FB1B37C22DCE1EE00352BE7 /* SavingsController.swift in Sources */,
+				3FB1B37A22DCDFEE00352BE7 /* MoreTabController.swift in Sources */,
 				3FCB5F9C22D630BE001953E9 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
