@@ -8,12 +8,33 @@
 
 import UIKit
 
-class SubtractingController: UIViewController {
+class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    @IBOutlet weak var categories: UIPickerView!
+    var categoriesData: [String] = [String]()
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return categoriesData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return categoriesData[row]
+    }
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+            super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.categories.delegate = self
+        self.categories.dataSource = self
+        
+        categoriesData = ["Food", "School", "Bills", "Transportation", "Clothes", "Entertainment", "Gifts"]
+       
     }
     
 

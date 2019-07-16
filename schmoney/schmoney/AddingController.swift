@@ -8,12 +8,37 @@
 
 import UIKit
 
-class AddingController: UIViewController {
+class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return categoriesData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return categoriesData[row]
+    }
+    
+    var categoriesData: [String] = [String]()
+    
+    @IBOutlet weak var categories: UIPickerView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
+        self.categories.delegate = self
+        self.categories.dataSource = self
+        
+        categoriesData = ["Food", "School", "Bills", "Transportation", "Clothes", "Entertainment", "Gifts"]
+       
     }
     
 

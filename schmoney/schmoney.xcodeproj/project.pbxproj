@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FAC8EC022DE13D40063DCE3 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */; };
 		3FB1B36E22DCD45800352BE7 /* WorkorNahController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */; };
 		3FB1B37022DCD49200352BE7 /* ForWorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B36F22DCD49200352BE7 /* ForWorkingController.swift */; };
 		3FB1B37222DCD4E500352BE7 /* ForNonWorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37122DCD4E500352BE7 /* ForNonWorkingController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorNahController.swift; sourceTree = "<group>"; };
 		3FB1B36F22DCD49200352BE7 /* ForWorkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForWorkingController.swift; sourceTree = "<group>"; };
 		3FB1B37122DCD4E500352BE7 /* ForNonWorkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForNonWorkingController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				3FB1B38122DCEB7600352BE7 /* CategoriesController.swift */,
 				3FB1B38322DCEBE800352BE7 /* SettingsController.swift */,
 				3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */,
+				3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */,
 				3FCB5F8722D62994001953E9 /* Main.storyboard */,
 				3FCB5F8A22D62995001953E9 /* Assets.xcassets */,
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 				3FCB5F8222D62994001953E9 /* AppDelegate.swift in Sources */,
 				3FB1B37E22DCE56A00352BE7 /* AddSavingsController.swift in Sources */,
 				3FB1B36E22DCD45800352BE7 /* WorkorNahController.swift in Sources */,
+				3FAC8EC022DE13D40063DCE3 /* PasscodeController.swift in Sources */,
 				3FB1B37822DCDA3A00352BE7 /* SubtractingController.swift in Sources */,
 				3FB1B37222DCD4E500352BE7 /* ForNonWorkingController.swift in Sources */,
 				3FCB5F8422D62994001953E9 /* FirstViewController.swift in Sources */,

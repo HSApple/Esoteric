@@ -1,19 +1,15 @@
 //
-//  WorkorNahController.swift
+//  PasscodeController.swift
 //  schmoney
 //
-//  Created by student on 7/15/19.
+//  Created by student on 7/16/19.
 //  Copyright © 2019 student. All rights reserved.
 //
 
 import UIKit
 
-class WorkorNahController: UIViewController {
-    @IBAction func work(_ sender: Any) {
-    }
-    @IBAction func nonWork(_ sender: Any) {
-    }
-    
+class PasscodeController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
