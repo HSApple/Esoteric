@@ -1,14 +1,14 @@
 //
-//  RestPassControllerViewController.swift
+//  MoreTabController.swift
 //  schmoney
 //
-//  Created by student on 7/10/19.
+//  Created by student on 7/15/19.
 //  Copyright © 2019 student. All rights reserved.
 //
 
 import UIKit
 
-class RestPassControllerViewController: UIViewController {
+class MoreTabController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
