@@ -30,6 +30,7 @@
 		3FCB5F9622D62F89001953E9 /* RestPassControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F9522D62F89001953E9 /* RestPassControllerViewController.swift */; };
 		3FCB5F9822D6307C001953E9 /* NewPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F9722D6307C001953E9 /* NewPasswordController.swift */; };
 		3FCB5F9C22D630BE001953E9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F9B22D630BE001953E9 /* SignUpController.swift */; };
+		3FE3514D22E0CA84005B0612 /* AddCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3514C22E0CA84005B0612 /* AddCategoriesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3FCB5F9522D62F89001953E9 /* RestPassControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPassControllerViewController.swift; sourceTree = "<group>"; };
 		3FCB5F9722D6307C001953E9 /* NewPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordController.swift; sourceTree = "<group>"; };
 		3FCB5F9B22D630BE001953E9 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		3FE3514C22E0CA84005B0612 /* AddCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoriesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				3FB1B38322DCEBE800352BE7 /* SettingsController.swift */,
 				3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */,
 				3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */,
+				3FE3514C22E0CA84005B0612 /* AddCategoriesController.swift */,
 				3FCB5F8722D62994001953E9 /* Main.storyboard */,
 				3FCB5F8A22D62995001953E9 /* Assets.xcassets */,
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB1B38622DCEDDB00352BE7 /* ReminderController.swift in Sources */,
+				3FE3514D22E0CA84005B0612 /* AddCategoriesController.swift in Sources */,
 				3FB1B38422DCEBE800352BE7 /* SettingsController.swift in Sources */,
 				3FCB5F8622D62994001953E9 /* CodeController.swift in Sources */,
 				3FB1B37022DCD49200352BE7 /* ForWorkingController.swift in Sources */,

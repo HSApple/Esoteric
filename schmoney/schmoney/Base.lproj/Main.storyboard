@@ -290,7 +290,11 @@
                                                 <segue destination="yq5-XU-9nj" kind="show" id="OuD-h0-yM2"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="af9-Jy-XKt"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="af9-Jy-XKt">
+                                            <connections>
+                                                <segue destination="M0Q-cK-ycK" kind="show" id="UcR-qD-W2W"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -307,6 +311,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6be-sQ-gol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="36" y="2541"/>
+        </scene>
+        <!--AddCategories-->
+        <scene sceneID="Fqn-NE-ZR8">
+            <objects>
+                <viewController title="AddCategories" id="M0Q-cK-ycK" customClass="AddCategoriesController" customModule="schmoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qME-WO-bP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJ2-o6-cyl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Categories" id="2Fw-xU-Cdi">
+                                        <barButtonItem key="leftBarButtonItem" id="DZk-V8-nQs">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lda-8t-8UW">
+                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTY-4a-3lF">
+                                <rect key="frame" x="119" y="164" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Knw-Bv-BAc">
+                                <rect key="frame" x="119" y="202" width="137" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-9p-FAH">
+                                <rect key="frame" x="172" y="251" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="49b-Pe-6se" kind="show" id="CHL-9w-m7c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Knw-Bv-BAc" firstAttribute="top" secondItem="DTY-4a-3lF" secondAttribute="bottom" constant="17" id="2mZ-k7-3Sc"/>
+                            <constraint firstItem="Knw-Bv-BAc" firstAttribute="leading" secondItem="zSp-T8-afM" secondAttribute="leading" constant="119" id="9HR-cf-Ia9"/>
+                            <constraint firstItem="zSp-T8-afM" firstAttribute="trailing" secondItem="DTY-4a-3lF" secondAttribute="trailing" constant="119" id="DI0-49-tiY"/>
+                            <constraint firstItem="2Rq-9p-FAH" firstAttribute="top" secondItem="Knw-Bv-BAc" secondAttribute="bottom" constant="19" id="EsL-cU-5pQ"/>
+                            <constraint firstItem="DTY-4a-3lF" firstAttribute="top" secondItem="rJ2-o6-cyl" secondAttribute="bottom" constant="100" id="NtR-xW-qBU"/>
+                            <constraint firstItem="zSp-T8-afM" firstAttribute="bottom" secondItem="2Rq-9p-FAH" secondAttribute="bottom" constant="342" id="PBx-zi-wA3"/>
+                            <constraint firstItem="rJ2-o6-cyl" firstAttribute="leading" secondItem="zSp-T8-afM" secondAttribute="leading" id="Tvc-5h-xpy"/>
+                            <constraint firstItem="DTY-4a-3lF" firstAttribute="leading" secondItem="zSp-T8-afM" secondAttribute="leading" constant="119" id="VvR-Jg-rjB"/>
+                            <constraint firstItem="zSp-T8-afM" firstAttribute="trailing" secondItem="Knw-Bv-BAc" secondAttribute="trailing" constant="119" id="d08-0s-rvb"/>
+                            <constraint firstItem="rJ2-o6-cyl" firstAttribute="top" secondItem="zSp-T8-afM" secondAttribute="top" id="fxd-3r-N54"/>
+                            <constraint firstItem="2Rq-9p-FAH" firstAttribute="leading" secondItem="zSp-T8-afM" secondAttribute="leading" constant="172" id="gfG-a1-TRu"/>
+                            <constraint firstItem="rJ2-o6-cyl" firstAttribute="trailing" secondItem="zSp-T8-afM" secondAttribute="trailing" id="gjP-tb-oZh"/>
+                            <constraint firstItem="zSp-T8-afM" firstAttribute="trailing" secondItem="2Rq-9p-FAH" secondAttribute="trailing" constant="173" id="w7F-K9-ahe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zSp-T8-afM"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNf-oh-cMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="3256.8215892053977"/>
         </scene>
         <!--Setting-->
         <scene sceneID="5g4-jc-uRs">
@@ -1383,10 +1454,13 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Vhu-qO-MEy"/>
+        <segue reference="UcR-qD-W2W"/>
         <segue reference="poX-jb-les"/>
-        <segue reference="izD-LA-REh"/>
+        <segue reference="4Lq-l8-yuS"/>
         <segue reference="Jrh-Uk-Gwo"/>
-        <segue reference="NEH-aV-oV2"/>
+        <segue reference="CHL-9w-m7c"/>
+        <segue reference="KTq-W6-EkT"/>
         <segue reference="6pb-xf-MKh"/>
     </inferredMetricsTieBreakers>
 </document>

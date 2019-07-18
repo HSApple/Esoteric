@@ -33,7 +33,6 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         // Do any additional setup after loading the view.
         
         
-        
         self.categories.delegate = self
         self.categories.dataSource = self
         
