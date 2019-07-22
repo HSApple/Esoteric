@@ -9,6 +9,7 @@
 import UIKit
 
 class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet weak var dateLabel: UILabel!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -25,19 +26,28 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     var categoriesData: [String] = [String]()
     
     @IBOutlet weak var categories: UIPickerView!
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+    var timer = Timer()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
         
         self.categories.delegate = self
         self.categories.dataSource = self
         
         categoriesData = ["Food", "School", "Bills", "Transportation", "Clothes", "Entertainment", "Gifts"]
-       
+        
+        
+    }
+    
+    @objc func tick() {
+        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
+        
+    }
+    
     }
     
 
@@ -51,4 +61,4 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     }
     */
 
-}
+

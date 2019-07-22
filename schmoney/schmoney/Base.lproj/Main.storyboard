@@ -465,12 +465,6 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rGT-qO-CDL">
                                 <rect key="frame" x="172" y="109" width="49" height="31"/>
                             </switch>
-                            <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-3x-3Ve">
-                                <rect key="frame" x="0.0" y="231" width="375" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="584904279.43853402">
-                                    <!--2019-07-15 17:24:39 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQ2-1v-rFZ">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
@@ -478,25 +472,45 @@
                                     <segue destination="7qA-Yy-rDY" kind="show" id="nqV-Zv-F9b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXa-tm-psz">
+                                <rect key="frame" x="163" y="442" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="7qA-Yy-rDY" kind="show" id="83n-3O-4LN"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McO-R4-ahX">
+                                <rect key="frame" x="0.0" y="225" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yvl-gj-Pfx" id="1hc-SD-nha"/>
+                                    <outlet property="delegate" destination="Yvl-gj-Pfx" id="qgS-iZ-lYd"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ecf-3x-3Ve" firstAttribute="trailing" secondItem="Z63-AU-2nt" secondAttribute="trailing" id="1nl-d8-WcO"/>
-                            <constraint firstItem="rGT-qO-CDL" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="172" id="5vb-dc-uuh"/>
-                            <constraint firstItem="ecf-3x-3Ve" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" id="6oJ-tW-rHR"/>
-                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="rGT-qO-CDL" secondAttribute="trailing" constant="156" id="B18-Ji-OF5"/>
-                            <constraint firstItem="rGT-qO-CDL" firstAttribute="top" secondItem="WaO-la-zfb" secondAttribute="bottom" constant="8" id="JAc-Ou-wIs"/>
-                            <constraint firstItem="ecf-3x-3Ve" firstAttribute="top" secondItem="rGT-qO-CDL" secondAttribute="bottom" constant="91" id="Nd1-dO-Pf5"/>
-                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="WaO-la-zfb" secondAttribute="trailing" constant="29" id="WPo-jb-NZO"/>
-                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="GQ2-1v-rFZ" secondAttribute="trailing" constant="319" id="gRO-6H-tei"/>
-                            <constraint firstItem="GQ2-1v-rFZ" firstAttribute="top" secondItem="Z63-AU-2nt" secondAttribute="top" id="kZb-kO-m9s"/>
-                            <constraint firstItem="Z63-AU-2nt" firstAttribute="bottom" secondItem="ecf-3x-3Ve" secondAttribute="bottom" constant="274" id="l2T-Uw-gGe"/>
-                            <constraint firstItem="WaO-la-zfb" firstAttribute="top" secondItem="GQ2-1v-rFZ" secondAttribute="bottom" constant="30" id="sSF-qw-zdi"/>
-                            <constraint firstItem="WaO-la-zfb" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="63" id="sd8-gh-e1R"/>
-                            <constraint firstItem="GQ2-1v-rFZ" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="22" id="xC3-fI-MqV"/>
+                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="nXa-tm-psz" secondAttribute="trailing" constant="163" id="9o2-AG-8CA"/>
+                            <constraint firstItem="nXa-tm-psz" firstAttribute="firstBaseline" secondItem="McO-R4-ahX" secondAttribute="baseline" constant="22" symbolType="layoutAnchor" id="A7T-Y4-SNJ"/>
+                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="rGT-qO-CDL" secondAttribute="trailing" constant="156" id="F1q-9s-999"/>
+                            <constraint firstItem="rGT-qO-CDL" firstAttribute="top" secondItem="WaO-la-zfb" secondAttribute="bottom" constant="8" id="JYN-wj-MgS"/>
+                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="WaO-la-zfb" secondAttribute="trailing" constant="29" id="QdR-sB-bd3"/>
+                            <constraint firstItem="WaO-la-zfb" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="63" id="UXQ-6R-lnt"/>
+                            <constraint firstItem="GQ2-1v-rFZ" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="22" id="b2R-TZ-mig"/>
+                            <constraint firstItem="Z63-AU-2nt" firstAttribute="bottom" secondItem="nXa-tm-psz" secondAttribute="bottom" constant="195" id="c4a-Ad-5oh"/>
+                            <constraint firstItem="McO-R4-ahX" firstAttribute="top" secondItem="rGT-qO-CDL" secondAttribute="bottom" constant="85" id="fwu-6A-qiZ"/>
+                            <constraint firstItem="McO-R4-ahX" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" id="gE4-lG-gh2"/>
+                            <constraint firstItem="rGT-qO-CDL" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="172" id="gWm-V1-54k"/>
+                            <constraint firstItem="Z63-AU-2nt" firstAttribute="trailing" secondItem="GQ2-1v-rFZ" secondAttribute="trailing" constant="319" id="gsc-1c-Ae3"/>
+                            <constraint firstItem="nXa-tm-psz" firstAttribute="leading" secondItem="Z63-AU-2nt" secondAttribute="leading" constant="163" id="jiR-OW-BDs"/>
+                            <constraint firstItem="WaO-la-zfb" firstAttribute="top" secondItem="GQ2-1v-rFZ" secondAttribute="bottom" constant="30" id="kLZ-O7-gaJ"/>
+                            <constraint firstItem="McO-R4-ahX" firstAttribute="trailing" secondItem="Z63-AU-2nt" secondAttribute="trailing" id="l9h-yK-d9U"/>
+                            <constraint firstItem="GQ2-1v-rFZ" firstAttribute="top" secondItem="Z63-AU-2nt" secondAttribute="top" id="rOP-rn-fVg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z63-AU-2nt"/>
                     </view>
+                    <connections>
+                        <outlet property="picker" destination="McO-R4-ahX" id="rDo-R8-739"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twD-Je-ICE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -914,6 +928,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="96g-Tw-bdB"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="CiS-kY-1P9" id="avo-rk-vo6"/>
+                        <outlet property="timeLabel" destination="dvE-g1-zbJ" id="6Ey-I7-Lyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eu2-7L-jFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1004,6 +1022,7 @@
                     </view>
                     <connections>
                         <outlet property="categories" destination="nDZ-6e-UZ7" id="nE9-rD-Wph"/>
+                        <outlet property="dateLabel" destination="IDY-pz-5eD" id="vXb-dt-pMs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4j-eN-Yns" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1089,6 +1108,7 @@
                     </view>
                     <connections>
                         <outlet property="categories" destination="MMK-kD-Km9" id="Trv-f5-uto"/>
+                        <outlet property="dateLabel" destination="iWS-VX-bkc" id="CtW-m3-NgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gi3-r2-cRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1454,11 +1474,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vhu-qO-MEy"/>
-        <segue reference="UcR-qD-W2W"/>
-        <segue reference="poX-jb-les"/>
+        <segue reference="i8k-Ne-zWR"/>
         <segue reference="4Lq-l8-yuS"/>
-        <segue reference="Jrh-Uk-Gwo"/>
+        <segue reference="nqV-Zv-F9b"/>
         <segue reference="CHL-9w-m7c"/>
         <segue reference="KTq-W6-EkT"/>
         <segue reference="6pb-xf-MKh"/>

@@ -10,6 +10,7 @@ import UIKit
 
 class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var categories: UIPickerView!
     var categoriesData: [String] = [String]()
     
@@ -25,17 +26,28 @@ class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerV
         return categoriesData[row]
     }
 
+    // Do any additional setup after loading the view.
+    
+    var timer = Timer()
+    
     override func viewDidLoad() {
-            super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()
+        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
         
         self.categories.delegate = self
         self.categories.dataSource = self
         
         categoriesData = ["Food", "School", "Bills", "Transportation", "Clothes", "Entertainment", "Gifts"]
-       
+        
+        
     }
+    
+    @objc func tick() {
+        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
+        
+    }
+    
+}
     
 
     /*
@@ -48,4 +60,5 @@ class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     */
 
-}
+
+

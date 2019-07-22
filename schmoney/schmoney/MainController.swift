@@ -9,9 +9,23 @@
 import UIKit
 
 class MainController: UIViewController {
-
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
+        
+    }
+    
+    @objc func tick() {
+        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
+        
+    }
+    
+    
 
         // Do any additional setup after loading the view.
     }
@@ -27,4 +41,4 @@ class MainController: UIViewController {
     }
     */
 
-}
+
