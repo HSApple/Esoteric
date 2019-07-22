@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>344658893450-65458m7f9r0n7vfmmpfi69331uvlvf58.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.344658893450-65458m7f9r0n7vfmmpfi69331uvlvf58</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBcj8DWIk91bLUyfScqf1f_kUMPBtzWLgg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>344658893450</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Esoteric.SchmoneyTest</string>
+	<key>PROJECT_ID</key>
+	<string>schmoney-45854</string>
+	<key>STORAGE_BUCKET</key>
+	<string>schmoney-45854.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:344658893450:ios:f493b728d0a6bf4c</string>
+	<key>DATABASE_URL</key>
+	<string>https://schmoney-45854.firebaseio.com</string>
+</dict>
+</plist>

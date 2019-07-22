@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2cF-Wv-Sll">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2cF-Wv-Sll">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firebase Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-Fr-ZMh">
-                                <rect key="frame" x="104" y="294.5" width="168" height="29"/>
+                                <rect key="frame" x="103.5" y="294.5" width="168" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -47,9 +45,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Gzf-aY-Irw" kind="show" animates="NO" id="IBH-5j-ASq">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="Gzf-aY-Irw" kind="show" animates="NO" id="IBH-5j-ASq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG9-g3-oLn" customClass="RoundedWhiteButton" customModule="FirebaseApp" customModuleProvider="target">
@@ -63,13 +59,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wie-nZ-YWG" kind="show" animates="NO" id="Xve-p8-Ir4">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="wie-nZ-YWG" kind="show" animates="NO" id="Xve-p8-Ir4"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebaselogo" translatesAutoresizingMaskIntoConstraints="NO" id="BUf-rb-WLe">
-                                <rect key="frame" x="137" y="170.5" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="170.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BUf-rb-WLe" secondAttribute="height" multiplier="1:1" id="OZ0-NL-VMi"/>
                                     <constraint firstAttribute="height" constant="100" id="jY8-tP-xjW"/>
@@ -99,14 +93,12 @@
                     <connections>
                         <outlet property="loginButton" destination="DF3-Ub-r8A" id="4ZS-0w-pyS"/>
                         <outlet property="signupButton" destination="cG9-g3-oLn" id="fje-dF-zKi"/>
-                        <segue destination="PUM-rf-8OE" kind="show" identifier="toHomeScreen" animates="NO" id="MWF-Rn-Rvg">
-                            <nil key="action"/>
-                        </segue>
+                        <segue destination="PUM-rf-8OE" kind="show" identifier="toHomeScreen" animates="NO" id="MWF-Rn-Rvg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctX-aG-fB5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2734" y="125"/>
+            <point key="canvasLocation" x="2530" y="125"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="k2v-ny-gh5">
@@ -274,13 +266,13 @@
                                                 <rect key="frame" x="36" y="64" width="303" height="350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaQ-4f-6ug">
-                                                        <rect key="frame" x="116.5" y="8" width="71" height="24"/>
+                                                        <rect key="frame" x="116" y="8" width="71" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBV-gg-FbV">
-                                                        <rect key="frame" x="12" y="56" width="76.5" height="17"/>
+                                                        <rect key="frame" x="12" y="56" width="76" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -489,7 +481,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xiF-Je-lTx">
-                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -507,9 +499,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kp7-zS-Gzg"/>
                     <connections>
-                        <segue destination="0Hw-EF-rLz" kind="show" identifier="toMenuScreen" animates="NO" id="30J-y2-sWk">
-                            <nil key="action"/>
-                        </segue>
+                        <segue destination="0Hw-EF-rLz" kind="show" identifier="toMenuScreen" animates="NO" id="30J-y2-sWk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNy-QR-Zzi" userLabel="First Responder" sceneMemberID="firstResponder"/>

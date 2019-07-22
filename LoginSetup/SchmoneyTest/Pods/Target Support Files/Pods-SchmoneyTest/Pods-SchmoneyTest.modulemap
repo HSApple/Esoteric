@@ -1,0 +1,6 @@
+framework module Pods_SchmoneyTest {
+  umbrella header "Pods-SchmoneyTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
