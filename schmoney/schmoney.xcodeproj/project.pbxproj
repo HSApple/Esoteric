@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F92DFD222E75A50001A08B9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37322DCD50400352BE7 /* MainController.swift */; };
 		3FAC8EC022DE13D40063DCE3 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */; };
 		3FB1B36E22DCD45800352BE7 /* WorkorNahController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */; };
 		3FB1B37022DCD49200352BE7 /* ForWorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B36F22DCD49200352BE7 /* ForWorkingController.swift */; };
 		3FB1B37222DCD4E500352BE7 /* ForNonWorkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37122DCD4E500352BE7 /* ForNonWorkingController.swift */; };
-		3FB1B37422DCD50400352BE7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37322DCD50400352BE7 /* MainController.swift */; };
 		3FB1B37622DCDA2100352BE7 /* AddingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37522DCDA2100352BE7 /* AddingController.swift */; };
 		3FB1B37822DCDA3A00352BE7 /* SubtractingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37722DCDA3A00352BE7 /* SubtractingController.swift */; };
 		3FB1B37A22DCDFEE00352BE7 /* MoreTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37922DCDFEE00352BE7 /* MoreTabController.swift */; };
@@ -110,9 +110,9 @@
 				3FB1B37F22DCE9DC00352BE7 /* TransactionsController.swift */,
 				3FB1B38122DCEB7600352BE7 /* CategoriesController.swift */,
 				3FB1B38322DCEBE800352BE7 /* SettingsController.swift */,
-				3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */,
 				3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */,
 				3FE3514C22E0CA84005B0612 /* AddCategoriesController.swift */,
+				3FB1B38522DCEDDB00352BE7 /* ReminderController.swift */,
 				3FCB5F8722D62994001953E9 /* Main.storyboard */,
 				3FCB5F8A22D62995001953E9 /* Assets.xcassets */,
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
@@ -193,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB1B38622DCEDDB00352BE7 /* ReminderController.swift in Sources */,
+				3F92DFD222E75A50001A08B9 /* MainController.swift in Sources */,
 				3FE3514D22E0CA84005B0612 /* AddCategoriesController.swift in Sources */,
 				3FB1B38422DCEBE800352BE7 /* SettingsController.swift in Sources */,
 				3FCB5F8622D62994001953E9 /* CodeController.swift in Sources */,
@@ -202,7 +203,6 @@
 				3FB1B38022DCE9DC00352BE7 /* TransactionsController.swift in Sources */,
 				3FB1B38222DCEB7600352BE7 /* CategoriesController.swift in Sources */,
 				3FCB5F9822D6307C001953E9 /* NewPasswordController.swift in Sources */,
-				3FB1B37422DCD50400352BE7 /* MainController.swift in Sources */,
 				3FCB5F8222D62994001953E9 /* AppDelegate.swift in Sources */,
 				3FB1B37E22DCE56A00352BE7 /* AddSavingsController.swift in Sources */,
 				3FB1B36E22DCD45800352BE7 /* WorkorNahController.swift in Sources */,

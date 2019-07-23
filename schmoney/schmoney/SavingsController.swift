@@ -8,23 +8,51 @@
 
 import UIKit
 
-class SavingsController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class SavingsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var table: UITableView!
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return taskList.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
+        
+        cell.textLabel?.text = taskList[indexPath.row]
+        
+        return cell
     }
-    */
-
+    
+    
+    var taskList: [String] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+   
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let itemObject = UserDefaults.standard.object(forKey: "taskList")
+        
+        if let tempTask = itemObject as?
+            [String] {
+            taskList = tempTask
+        }
+        
+        table.reloadData()
+    
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            taskList.remove(at: indexPath.row)
+            table.reloadData()
+            UserDefaults.standard.set(taskList, forKey: "taskList")
+        }
+    }
+    
 }
+

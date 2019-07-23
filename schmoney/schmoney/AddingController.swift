@@ -10,6 +10,33 @@ import UIKit
 
 class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var task: UITextField!
+    
+    @IBAction func enter(_ sender: Any) {
+        performSegue(withIdentifier: "seeBalance", sender: Any?.self)
+    }
+    
+    @IBAction func plus(_ sender: Any) {
+        let itemObject = UserDefaults.standard.object(forKey: "list")
+        
+        var list: [String]
+        
+        if let tempTask = itemObject as? [String] {
+            list = tempTask
+            list.append(task.text!)
+            
+            print(list)
+        } else {
+            list = [task.text!]
+            
+        }
+        UserDefaults.standard.set(list, forKey: "list")
+        
+        task.text = ""
+        
+    
+    }
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -31,6 +58,16 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
     var timer = Timer()
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
@@ -43,13 +80,11 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
     }
     
-    @objc func tick() {
-        dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
-        
-    }
     
-    }
-    
+        @objc func tick() {
+            dateLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
+            
+        }
 
     /*
     // MARK: - Navigation
@@ -62,3 +97,4 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     */
 
 
+}

@@ -10,6 +10,39 @@ import UIKit
 
 class AddSavingsController: UIViewController {
 
+    @IBOutlet weak var newTask: UITextField!
+    
+    @IBAction func add(_ sender: Any) {
+        let itemObject = UserDefaults.standard.object(forKey: "taskList")
+        
+        var taskList: [String]
+        
+        if let tempTask = itemObject as? [String] {
+            taskList = tempTask
+            taskList.append(newTask.text!)
+            
+            print(taskList)
+        } else {
+            taskList = [newTask.text!]
+            
+        }
+        UserDefaults.standard.set(taskList, forKey: "taskList")
+        
+        newTask.text = ""
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
