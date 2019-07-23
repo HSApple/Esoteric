@@ -3,33 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F86F33622E75BE20065A42A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86F33522E75BE20065A42A /* SignUpViewController.swift */; };
+		3F86F38422E76F850065A42A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F86F38322E76F850065A42A /* LoginViewController.swift */; };
 		3F92FB9522E60641004BDEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92FB9422E60641004BDEBB /* AppDelegate.swift */; };
-		3F92FB9722E60641004BDEBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92FB9622E60641004BDEBB /* ViewController.swift */; };
 		3F92FB9A22E60641004BDEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F92FB9822E60641004BDEBB /* Main.storyboard */; };
 		3F92FB9C22E60641004BDEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F92FB9B22E60641004BDEBB /* Assets.xcassets */; };
 		3F92FB9F22E60641004BDEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F92FB9D22E60641004BDEBB /* LaunchScreen.storyboard */; };
-		3F92FBA922E612D9004BDEBB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92FBA822E612D9004BDEBB /* SignUpViewController.swift */; };
-		3F92FBAB22E612EC004BDEBB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92FBAA22E612EC004BDEBB /* LoginViewController.swift */; };
-		3F92FBAD22E6205C004BDEBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F92FBAC22E6205C004BDEBB /* GoogleService-Info.plist */; };
 		D9E6AE0F8D8BDBE573864AD0 /* Pods_SchmoneyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1A0976DC3382DB71E7F267 /* Pods_SchmoneyTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C1A0976DC3382DB71E7F267 /* Pods_SchmoneyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchmoneyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F86F33522E75BE20065A42A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3F86F38322E76F850065A42A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F92FB9122E60641004BDEBB /* SchmoneyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchmoneyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F92FB9422E60641004BDEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F92FB9622E60641004BDEBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F92FB9922E60641004BDEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F92FB9B22E60641004BDEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F92FB9E22E60641004BDEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F92FBA022E60641004BDEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F92FBA822E612D9004BDEBB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		3F92FBAA22E612EC004BDEBB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3F92FBAC22E6205C004BDEBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F92FBAE22E6205F004BDEBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79BF2A9E06AFBC2752D53196 /* Pods-SchmoneyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchmoneyTest.release.xcconfig"; path = "Target Support Files/Pods-SchmoneyTest/Pods-SchmoneyTest.release.xcconfig"; sourceTree = "<group>"; };
 		7AD0E6074285BEB57672FE67 /* Pods-SchmoneyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchmoneyTest.debug.xcconfig"; path = "Target Support Files/Pods-SchmoneyTest/Pods-SchmoneyTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +54,6 @@
 		3F92FB8822E60641004BDEBB = {
 			isa = PBXGroup;
 			children = (
-				3F92FBAC22E6205C004BDEBB /* GoogleService-Info.plist */,
 				3F92FB9322E60641004BDEBB /* SchmoneyTest */,
 				3F92FB9222E60641004BDEBB /* Products */,
 				534039D09525ECEAF778E9B3 /* Pods */,
@@ -78,9 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				3F92FB9422E60641004BDEBB /* AppDelegate.swift */,
-				3F92FB9622E60641004BDEBB /* ViewController.swift */,
-				3F92FBA822E612D9004BDEBB /* SignUpViewController.swift */,
-				3F92FBAA22E612EC004BDEBB /* LoginViewController.swift */,
+				3F86F33522E75BE20065A42A /* SignUpViewController.swift */,
+				3F86F38322E76F850065A42A /* LoginViewController.swift */,
 				3F92FB9822E60641004BDEBB /* Main.storyboard */,
 				3F92FB9B22E60641004BDEBB /* Assets.xcassets */,
 				3F92FB9D22E60641004BDEBB /* LaunchScreen.storyboard */,
@@ -96,7 +90,6 @@
 				7AD0E6074285BEB57672FE67 /* Pods-SchmoneyTest.debug.xcconfig */,
 				79BF2A9E06AFBC2752D53196 /* Pods-SchmoneyTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F92FB9F22E60641004BDEBB /* LaunchScreen.storyboard in Resources */,
-				3F92FBAD22E6205C004BDEBB /* GoogleService-Info.plist in Resources */,
 				3F92FB9C22E60641004BDEBB /* Assets.xcassets in Resources */,
 				3F92FB9A22E60641004BDEBB /* Main.storyboard in Resources */,
 			);
@@ -216,9 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F92FBAB22E612EC004BDEBB /* LoginViewController.swift in Sources */,
-				3F92FBA922E612D9004BDEBB /* SignUpViewController.swift in Sources */,
-				3F92FB9722E60641004BDEBB /* ViewController.swift in Sources */,
+				3F86F38422E76F850065A42A /* LoginViewController.swift in Sources */,
+				3F86F33622E75BE20065A42A /* SignUpViewController.swift in Sources */,
 				3F92FB9522E60641004BDEBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
