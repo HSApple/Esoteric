@@ -12,6 +12,30 @@ class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var categories: UIPickerView!
+    @IBOutlet weak var amount: UITextField!
+    
+    @IBAction func button(_ sender: Any) {
+        performSegue(withIdentifier: "Balance", sender: Any?.self)
+    }
+    @IBAction func minus(_ sender: Any) {
+        let itemObject = UserDefaults.standard.object(forKey: "list")
+        
+        var list: [String]
+        
+        if let tempTask = itemObject as? [String] {
+            list = tempTask
+            list.append(amount.text!)
+            
+            print(list)
+        } else {
+            list = [amount.text!]
+            
+        }
+        UserDefaults.standard.set(list, forKey: "list")
+        
+        amount.text = "-"
+    }
+    
     var categoriesData: [String] = [String]()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -29,6 +53,17 @@ class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerV
     // Do any additional setup after loading the view.
     
     var timer = Timer()
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
