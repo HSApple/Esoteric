@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_3298511929" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iok-lP-4ol">
+                                <rect key="frame" x="110" y="47" width="155" height="155"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9O-Jc-EGx">
                                 <rect key="frame" x="36" y="210" width="303" height="350"/>
                                 <subviews>
@@ -91,9 +94,6 @@
                                     <constraint firstItem="wj8-Hv-bhq" firstAttribute="top" secondItem="w9O-Jc-EGx" secondAttribute="top" constant="8" id="xzf-lI-B3s"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageedit_1_3298511929" translatesAutoresizingMaskIntoConstraints="NO" id="Iok-lP-4ol">
-                                <rect key="frame" x="110" y="47" width="155" height="155"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
