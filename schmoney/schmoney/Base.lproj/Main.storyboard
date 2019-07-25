@@ -18,69 +18,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schmoney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2I-ue-gGh">
-                                <rect key="frame" x="145" y="164" width="85" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuW-Ty-fLT">
+                                <rect key="frame" x="120" y="577" width="134" height="30"/>
+                                <state key="normal" title="NEED TO SIGN UP?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1es-w9-apk" kind="show" id="UCo-Uv-l7M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hic-3D-7IH">
+                                <rect key="frame" x="110" y="604" width="155" height="30"/>
+                                <state key="normal" title="FORGOT PASSWORD?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8rJ-Kc-sve" kind="show" id="qzR-Tw-MoG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="3qd-3n-gVD">
+                                <rect key="frame" x="75" y="22" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHMONEY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djI-j9-ROX">
+                                <rect key="frame" x="16" y="68" width="165.5" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username/Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CzL-c8-krS">
-                                <rect key="frame" x="111" y="229" width="152" height="30"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vb-sY-qwJ">
+                                <rect key="frame" x="298" y="68" width="41" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="userEmail:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="ZoQ-uh-WKa"/>
-                                </connections>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="23123" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIP-EU-Qul">
+                                <rect key="frame" x="56" y="547" width="279" height="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2YR-9D-75V">
-                                <rect key="frame" x="111" y="287" width="152" height="30"/>
-                                <nil key="textColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE6-I1-PIn">
+                                <rect key="frame" x="290" y="577" width="45" height="30"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="L3A-EG-3Ky" kind="show" id="eMi-fB-E4E"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viv-Sg-5LI">
+                                <rect key="frame" x="-25" y="521" width="279" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2qO-Yj-JHk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iO1-y7-lpD">
+                                <rect key="frame" x="0.0" y="498" width="279" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="JCU-l0-HIL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEX-PM-8Db">
+                                <rect key="frame" x="165" y="547" width="77.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="retetertertre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nCH-jS-dad">
+                                <rect key="frame" x="3" y="585" width="279" height="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfo-p9-htd">
-                                <rect key="frame" x="111" y="342" width="123" height="30"/>
-                                <state key="normal" title="Forgot Password?"/>
-                                <connections>
-                                    <segue destination="8rJ-Kc-sve" kind="show" id="02u-ZO-q5S"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feh-ZC-PbV">
-                                <rect key="frame" x="111" y="407" width="38" height="30"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="L3A-EG-3Ky" kind="show" id="0xO-bn-k5j"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRR-Dc-VWu">
-                                <rect key="frame" x="203" y="407" width="54" height="30"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <segue destination="1es-w9-apk" kind="show" id="cyf-sC-egG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CzL-c8-krS" firstAttribute="top" secondItem="L2I-ue-gGh" secondAttribute="bottom" constant="44" id="2vL-Uh-sTM"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Feh-ZC-PbV" secondAttribute="bottom" constant="230" id="7w7-7H-oRP"/>
-                            <constraint firstItem="HRR-Dc-VWu" firstAttribute="leading" secondItem="Feh-ZC-PbV" secondAttribute="trailing" constant="54" id="8pK-yH-axF"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="HRR-Dc-VWu" secondAttribute="trailing" constant="118" id="BXi-Lp-1O1"/>
-                            <constraint firstItem="L2I-ue-gGh" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="145" id="GKy-ff-8VQ"/>
-                            <constraint firstItem="2YR-9D-75V" firstAttribute="top" secondItem="CzL-c8-krS" secondAttribute="bottom" constant="28" id="Nae-3v-Bpb"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="HRR-Dc-VWu" secondAttribute="bottom" constant="230" id="OqG-aa-uAQ"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="2YR-9D-75V" secondAttribute="trailing" constant="112" id="TFe-t9-Deg"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="CzL-c8-krS" secondAttribute="trailing" constant="112" id="UhF-D8-0f7"/>
-                            <constraint firstItem="Feh-ZC-PbV" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="111" id="YsZ-em-L5N"/>
-                            <constraint firstItem="Feh-ZC-PbV" firstAttribute="top" secondItem="Nfo-p9-htd" secondAttribute="bottom" constant="35" id="dEF-IB-APE"/>
-                            <constraint firstItem="2YR-9D-75V" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="111" id="h6A-bN-IAa"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="L2I-ue-gGh" secondAttribute="trailing" constant="145" id="isO-Qr-yNp"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Nfo-p9-htd" secondAttribute="trailing" constant="141" id="tE9-aT-W0w"/>
-                            <constraint firstItem="L2I-ue-gGh" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="144" id="v6X-wD-HnH"/>
-                            <constraint firstItem="CzL-c8-krS" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="111" id="vcy-F7-AL1"/>
-                            <constraint firstItem="Nfo-p9-htd" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="111" id="xUv-PN-wT4"/>
-                            <constraint firstItem="HRR-Dc-VWu" firstAttribute="top" secondItem="Nfo-p9-htd" secondAttribute="bottom" constant="35" id="zfo-PK-nhd"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0vb-sY-qwJ" secondAttribute="trailing" constant="20" symbolic="YES" id="3vi-yp-fdo"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="hic-3D-7IH" secondAttribute="trailing" constant="110" id="6VK-Co-0Dz"/>
+                            <constraint firstItem="wIP-EU-Qul" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="36" id="8QX-7U-yHw"/>
+                            <constraint firstItem="vEX-PM-8Db" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="32" id="924-ls-q8U"/>
+                            <constraint firstItem="djI-j9-ROX" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-88.75" id="CBG-Pz-pRZ"/>
+                            <constraint firstAttribute="bottom" secondItem="CE6-I1-PIn" secondAttribute="bottom" constant="60" id="CCU-nA-C0C"/>
+                            <constraint firstItem="djI-j9-ROX" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="68" id="DJW-Vo-9WN"/>
+                            <constraint firstAttribute="trailing" secondItem="nCH-jS-dad" secondAttribute="trailing" constant="110" id="Gkv-CS-KR5"/>
+                            <constraint firstAttribute="trailing" secondItem="CE6-I1-PIn" secondAttribute="trailing" constant="40" id="ION-WC-HwG"/>
+                            <constraint firstAttribute="trailing" secondItem="wIP-EU-Qul" secondAttribute="trailing" constant="60" id="cNg-dp-GWT"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="hic-3D-7IH" secondAttribute="bottom" constant="33" id="eXs-Eh-3QM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vEX-PM-8Db" secondAttribute="trailing" constant="20" symbolic="YES" id="gp7-vs-oDP"/>
+                            <constraint firstItem="uuW-Ty-fLT" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="120" id="j9c-SM-6Kj"/>
+                            <constraint firstItem="hic-3D-7IH" firstAttribute="top" secondItem="uuW-Ty-fLT" secondAttribute="bottom" constant="-3" id="jjK-mg-Ihx"/>
+                            <constraint firstItem="hic-3D-7IH" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="110" id="mKa-uV-Db7"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="uuW-Ty-fLT" secondAttribute="trailing" constant="121" id="pI1-uS-0ap"/>
+                            <constraint firstItem="nCH-jS-dad" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="-14" id="rn4-K8-VsE"/>
+                            <constraint firstItem="0vb-sY-qwJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="298" id="xoE-3t-pTa"/>
+                            <constraint firstItem="CE6-I1-PIn" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="290" id="zcp-tb-Maa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -118,7 +152,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36i-dx-cL2">
                                 <rect key="frame" x="126" y="346" width="123" height="31"/>
-                                <state key="normal" title="Change Password"/>
+                                <state key="normal" title="Change Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="xPP-ph-HuT"/>
                                 </connections>
@@ -169,7 +205,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn3-8a-ZOF">
                                 <rect key="frame" x="159" y="90" width="56" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="L3A-EG-3Ky" kind="show" id="92D-A1-XfZ"/>
                                 </connections>
@@ -205,39 +243,51 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSE-BK-2dp">
                                 <rect key="frame" x="160" y="35" width="55" height="30"/>
-                                <state key="normal" title="Balance"/>
+                                <state key="normal" title="Balance">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="L3A-EG-3Ky" kind="show" id="poX-jb-les"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5V5-4a-7lz">
                                 <rect key="frame" x="162" y="94" width="50" height="30"/>
-                                <state key="normal" title="Budget"/>
+                                <state key="normal" title="Budget">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJe-df-RMN">
                                 <rect key="frame" x="160" y="158" width="54" height="30"/>
-                                <state key="normal" title="Savings"/>
+                                <state key="normal" title="Savings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="bU8-kM-3vf" kind="show" id="Kxi-e4-Tkc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3h-QL-JDa">
                                 <rect key="frame" x="143" y="225" width="89" height="30"/>
-                                <state key="normal" title="Transactions"/>
+                                <state key="normal" title="Transactions">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="lK9-Y5-uFq" kind="show" id="B49-wA-InF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-aU-cDw">
                                 <rect key="frame" x="150" y="297" width="75" height="30"/>
-                                <state key="normal" title="Categories"/>
+                                <state key="normal" title="Categories">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="49b-Pe-6se" kind="show" id="iWf-1d-yFI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-9y-xjP">
                                 <rect key="frame" x="163" y="375" width="49" height="30"/>
-                                <state key="normal" title="Setting"/>
+                                <state key="normal" title="Setting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="7qA-Yy-rDY" kind="show" id="Jrh-Uk-Gwo"/>
                                 </connections>
@@ -350,7 +400,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-9p-FAH">
                                 <rect key="frame" x="172" y="251" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="49b-Pe-6se" kind="show" id="CHL-9w-m7c"/>
                                 </connections>
@@ -391,7 +443,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04v-pD-rki">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="yq5-XU-9nj" kind="show" id="KTq-W6-EkT"/>
                                 </connections>
@@ -399,7 +453,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljx-Wt-H5j">
                                 <rect key="frame" x="160" y="428" width="55" height="30"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="1" green="0.17517959332657662" blue="0.057067120372575997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="6pb-xf-MKh"/>
@@ -407,21 +461,27 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-7O-dN5">
                                 <rect key="frame" x="152" y="352" width="71" height="30"/>
-                                <state key="normal" title="Reset App"/>
+                                <state key="normal" title="Reset App">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="reset:" destination="7qA-Yy-rDY" eventType="touchUpInside" id="QtR-kG-1q4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktq-la-GuH">
                                 <rect key="frame" x="152" y="280" width="77" height="30"/>
-                                <state key="normal" title="Reminder"/>
+                                <state key="normal" title="Reminder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Yvl-gj-Pfx" kind="show" id="vUP-Gh-KeH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR6-Ut-vx6">
                                 <rect key="frame" x="154" y="207" width="67" height="30"/>
-                                <state key="normal" title="Passcode"/>
+                                <state key="normal" title="Passcode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="f6s-2L-t8O" kind="show" id="zKW-9N-egv"/>
                                 </connections>
@@ -472,14 +532,18 @@
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQ2-1v-rFZ">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="7qA-Yy-rDY" kind="show" id="nqV-Zv-F9b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXa-tm-psz">
                                 <rect key="frame" x="163" y="442" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="7qA-Yy-rDY" kind="show" id="83n-3O-4LN"/>
                                 </connections>
@@ -524,7 +588,7 @@
         <!--Passcode-->
         <scene sceneID="pcS-ql-vEA">
             <objects>
-                <viewController title="Passcode" id="f6s-2L-t8O" sceneMemberID="viewController">
+                <viewController title="Passcode" id="f6s-2L-t8O" customClass="PasscodeController" customModule="schmoney" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mlh-4t-aiA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,14 +601,18 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDj-7u-fgd">
                                 <rect key="frame" x="169" y="356" width="37" height="30"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="7qA-Yy-rDY" kind="show" id="QOj-gQ-FxH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmR-G9-e8n">
                                 <rect key="frame" x="15" y="20" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="7qA-Yy-rDY" kind="show" id="QOd-dh-UEZ"/>
                                 </connections>
@@ -653,7 +721,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bq-Hh-MjO">
                                 <rect key="frame" x="15" y="20" width="59" height="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="bU8-kM-3vf" kind="show" id="ean-LE-w7o"/>
                                 </connections>
@@ -717,7 +787,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mb-J4-Ttm">
                                 <rect key="frame" x="155" y="563" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="submit:" destination="50T-VK-mgg" eventType="touchUpInside" id="5kY-qW-Qq4"/>
                                     <segue destination="bU8-kM-3vf" kind="show" identifier="savings" id="vw3-03-y7N"/>
@@ -783,6 +855,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zV-yi-5bK">
                                 <rect key="frame" x="22" y="20" width="34" height="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="yq5-XU-9nj" kind="show" id="T8N-KI-nyb"/>
@@ -796,30 +869,35 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apA-M6-PtV">
                                 <rect key="frame" x="22" y="124" width="101" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•  -200.00 // School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-VY-grh">
                                 <rect key="frame" x="51" y="153" width="151" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• +10.00 // Mom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huw-Ie-x0u">
                                 <rect key="frame" x="51" y="182" width="123" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 20, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouG-vw-yX3">
                                 <rect key="frame" x="22" y="229" width="109" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="• +1,000 // Birthday " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPw-BV-952">
                                 <rect key="frame" x="51" y="258" width="153" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -867,19 +945,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$214.43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0r-KF-qXI">
                                 <rect key="frame" x="166" y="54" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Charts)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qA-sT-moE">
                                 <rect key="frame" x="166" y="151" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July 15, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiS-kY-1P9">
                                 <rect key="frame" x="16" y="238" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pa8-Sp-A4Y">
@@ -993,13 +1071,16 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjK-Mi-M8c">
                                 <rect key="frame" x="15" y="20" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="L3A-EG-3Ky" kind="show" id="4PS-cS-Gs6"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="nDZ-6e-UZ7">
                                 <rect key="frame" x="16" y="288" width="344" height="216"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="d3u-JM-U0a" id="aEW-OR-Mzl"/>
                                     <outlet property="delegate" destination="d3u-JM-U0a" id="VAW-Xi-gup"/>
@@ -1007,7 +1088,9 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvr-4a-OTY">
                                 <rect key="frame" x="170" y="573" width="37" height="30"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="enter:" destination="d3u-JM-U0a" eventType="touchUpInside" id="QwL-rS-RGo"/>
                                     <segue destination="L3A-EG-3Ky" kind="show" identifier="seeBalance" id="bcS-01-GHh"/>
@@ -1066,7 +1149,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aub-VA-Ogh">
                                 <rect key="frame" x="15" y="20" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="L3A-EG-3Ky" kind="show" id="i8k-Ne-zWR"/>
                                 </connections>
@@ -1091,7 +1176,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQK-wh-F3q">
                                 <rect key="frame" x="186" y="572" width="37" height="30"/>
-                                <state key="normal" title="Enter"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="button:" destination="82a-gv-DNZ" eventType="touchUpInside" id="C64-uL-SOa"/>
                                     <segue destination="L3A-EG-3Ky" kind="show" identifier="Balance" id="wFK-Ol-KaK"/>
@@ -1190,14 +1277,18 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6da-7U-Fgp">
                                 <rect key="frame" x="152" y="241" width="54" height="30"/>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="WTA-yC-6UU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ8-Fg-sm3">
-                                <rect key="frame" x="22" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ8-Fg-sm3">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="ri0-F4-0Cp"/>
                                 </connections>
@@ -1251,7 +1342,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tO-dC-ft2">
                                 <rect key="frame" x="55" y="93" width="57" height="30"/>
-                                <state key="normal" title="Working"/>
+                                <state key="normal" title="Working">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="work:" destination="2Rv-Ox-oVY" eventType="touchUpInside" id="okN-WL-gGO"/>
                                     <segue destination="ojS-2g-VI9" kind="show" id="bAo-pG-ZSN"/>
@@ -1259,7 +1352,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLo-4x-uCL">
                                 <rect key="frame" x="228" y="93" width="89" height="30"/>
-                                <state key="normal" title="Non-working"/>
+                                <state key="normal" title="Non-working">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="nonWork:" destination="2Rv-Ox-oVY" eventType="touchUpInside" id="qyf-FU-IKs"/>
                                     <segue destination="4pK-N3-Jqt" kind="show" id="Lim-FT-DqB"/>
@@ -1332,7 +1427,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeY-k8-f0N">
                                 <rect key="frame" x="145" y="426" width="85" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="L3A-EG-3Ky" kind="show" id="nwc-dt-9Rn"/>
                                 </connections>
@@ -1387,7 +1484,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email to recieve a code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pU-R9-Mp8">
                                 <rect key="frame" x="58" y="70" width="259" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="guK-So-LkK">
@@ -1398,14 +1495,18 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-uA-Csw">
                                 <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="UNK-KZ-bJ5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ0-OI-fdl">
                                 <rect key="frame" x="58" y="231" width="36" height="30"/>
-                                <state key="normal" title="Send"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="rjb-hX-0uM" kind="show" id="zTv-Zi-3TW"/>
                                 </connections>
@@ -1459,7 +1560,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo7-D0-h1B">
                                 <rect key="frame" x="110" y="145" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="qTx-8C-EWY" kind="show" id="Gb8-h9-3ej"/>
                                 </connections>
@@ -1504,14 +1607,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image-1" width="512" height="512"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wFK-Ol-KaK"/>
+        <segue reference="qzR-Tw-MoG"/>
+        <segue reference="eMi-fB-E4E"/>
         <segue reference="Kxi-e4-Tkc"/>
-        <segue reference="Jrh-Uk-Gwo"/>
-        <segue reference="iWf-1d-yFI"/>
+        <segue reference="QOd-dh-UEZ"/>
+        <segue reference="ufB-FU-Gf4"/>
         <segue reference="KTq-W6-EkT"/>
         <segue reference="UNK-KZ-bJ5"/>
     </inferredMetricsTieBreakers>
