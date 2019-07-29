@@ -32,7 +32,7 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         }
         UserDefaults.standard.set(list, forKey: "list")
         
-        task.text = ""
+        task.text = "+"
         
     
     }
@@ -90,6 +90,9 @@ class AddingController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         
         gradientLayer.frame = self.view.bounds
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        task.text = "+"
+        
         
     }
     

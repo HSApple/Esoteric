@@ -88,6 +88,8 @@ class SubtractingController: UIViewController, UIPickerViewDataSource, UIPickerV
         gradientLayer.frame = self.view.bounds
         self.view.layer.insertSublayer(gradientLayer, at: 0)
         
+        amount.text = "-"
+        
     }
     
     @objc func tick() {

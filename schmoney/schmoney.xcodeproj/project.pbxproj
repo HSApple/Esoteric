@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8B6DDB22EF478200B10BF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F8B6DDA22EF478200B10BF5 /* GoogleService-Info.plist */; };
 		3F92DFD222E75A50001A08B9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37322DCD50400352BE7 /* MainController.swift */; };
 		3F9519C722E8BE44008000E8 /* MoreTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9519C622E8BE44008000E8 /* MoreTabController.swift */; };
 		3FAC8EC022DE13D40063DCE3 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */; };
@@ -31,9 +32,12 @@
 		3FCB5F9822D6307C001953E9 /* NewPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F9722D6307C001953E9 /* NewPasswordController.swift */; };
 		3FCB5F9C22D630BE001953E9 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB5F9B22D630BE001953E9 /* SignUpController.swift */; };
 		3FE3514D22E0CA84005B0612 /* AddCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3514C22E0CA84005B0612 /* AddCategoriesController.swift */; };
+		6ADD02B4890618B0B71A9496 /* Pods_schmoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80960DCABB7710328F16F66D /* Pods_schmoney.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F967860C2E08A65309142A3 /* Pods-schmoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schmoney.release.xcconfig"; path = "Target Support Files/Pods-schmoney/Pods-schmoney.release.xcconfig"; sourceTree = "<group>"; };
+		3F8B6DDA22EF478200B10BF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F9519C622E8BE44008000E8 /* MoreTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabController.swift; sourceTree = "<group>"; };
 		3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorNahController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		3FCB5F9722D6307C001953E9 /* NewPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordController.swift; sourceTree = "<group>"; };
 		3FCB5F9B22D630BE001953E9 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		3FE3514C22E0CA84005B0612 /* AddCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoriesController.swift; sourceTree = "<group>"; };
+		80960DCABB7710328F16F66D /* Pods_schmoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schmoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C463A99BEA9500BAD3913D /* Pods-schmoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schmoney.debug.xcconfig"; path = "Target Support Files/Pods-schmoney/Pods-schmoney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADD02B4890618B0B71A9496 /* Pods_schmoney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			children = (
 				3FCB5F8022D62994001953E9 /* schmoney */,
 				3FCB5F7F22D62994001953E9 /* Products */,
+				AFF2DA842B07DD1C12E05293 /* Pods */,
+				4B7D6DBF69CE0C8BD9C17AF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,8 +126,26 @@
 				3FCB5F8A22D62995001953E9 /* Assets.xcassets */,
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
 				3FCB5F8F22D62995001953E9 /* Info.plist */,
+				3F8B6DDA22EF478200B10BF5 /* GoogleService-Info.plist */,
 			);
 			path = schmoney;
+			sourceTree = "<group>";
+		};
+		4B7D6DBF69CE0C8BD9C17AF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80960DCABB7710328F16F66D /* Pods_schmoney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFF2DA842B07DD1C12E05293 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81C463A99BEA9500BAD3913D /* Pods-schmoney.debug.xcconfig */,
+				0F967860C2E08A65309142A3 /* Pods-schmoney.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FCB5F9222D62995001953E9 /* Build configuration list for PBXNativeTarget "schmoney" */;
 			buildPhases = (
+				F65FE23DD213E3BD7E7DD4BA /* [CP] Check Pods Manifest.lock */,
 				3FCB5F7A22D62994001953E9 /* Sources */,
 				3FCB5F7B22D62994001953E9 /* Frameworks */,
 				3FCB5F7C22D62994001953E9 /* Resources */,
+				3A164EC91C6F497ABBBC52B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,12 +209,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCB5F8E22D62995001953E9 /* LaunchScreen.storyboard in Resources */,
+				3F8B6DDB22EF478200B10BF5 /* GoogleService-Info.plist in Resources */,
 				3FCB5F8B22D62995001953E9 /* Assets.xcassets in Resources */,
 				3FCB5F8922D62994001953E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A164EC91C6F497ABBBC52B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schmoney/Pods-schmoney-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-schmoney/Pods-schmoney-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-schmoney/Pods-schmoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F65FE23DD213E3BD7E7DD4BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-schmoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FCB5F7A22D62994001953E9 /* Sources */ = {
@@ -356,15 +428,17 @@
 		};
 		3FCB5F9322D62995001953E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C463A99BEA9500BAD3913D /* Pods-schmoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z59VAQSBG;
 				INFOPLIST_FILE = schmoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.schmoney;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteric.Schmoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,15 +447,17 @@
 		};
 		3FCB5F9422D62995001953E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F967860C2E08A65309142A3 /* Pods-schmoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z59VAQSBG;
 				INFOPLIST_FILE = schmoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.schmoney;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteric.Schmoney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
