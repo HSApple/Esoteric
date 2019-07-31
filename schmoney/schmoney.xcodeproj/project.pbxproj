@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F87178E22F1D8AB00EC7B93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F87178D22F1D8AB00EC7B93 /* GoogleService-Info.plist */; };
+		3F87179422F1E17E00EC7B93 /* PieChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F87179322F1E17E00EC7B93 /* PieChartView.xib */; };
+		3F87179622F1F7AE00EC7B93 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87179522F1F7AE00EC7B93 /* PieChartView.swift */; };
 		3F92DFD222E75A50001A08B9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37322DCD50400352BE7 /* MainController.swift */; };
 		3F9519C722E8BE44008000E8 /* MoreTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9519C622E8BE44008000E8 /* MoreTabController.swift */; };
 		3FAC8EC022DE13D40063DCE3 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		0F967860C2E08A65309142A3 /* Pods-schmoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schmoney.release.xcconfig"; path = "Target Support Files/Pods-schmoney/Pods-schmoney.release.xcconfig"; sourceTree = "<group>"; };
 		3F87178D22F1D8AB00EC7B93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F87179322F1E17E00EC7B93 /* PieChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartView.xib; sourceTree = "<group>"; };
+		3F87179522F1F7AE00EC7B93 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		3F9519C622E8BE44008000E8 /* MoreTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabController.swift; sourceTree = "<group>"; };
 		3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorNahController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
 				3FCB5F8F22D62995001953E9 /* Info.plist */,
 				3F87178D22F1D8AB00EC7B93 /* GoogleService-Info.plist */,
+				3F87179322F1E17E00EC7B93 /* PieChartView.xib */,
+				3F87179522F1F7AE00EC7B93 /* PieChartView.swift */,
 			);
 			path = schmoney;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCB5F8E22D62995001953E9 /* LaunchScreen.storyboard in Resources */,
+				3F87179422F1E17E00EC7B93 /* PieChartView.xib in Resources */,
 				3F87178E22F1D8AB00EC7B93 /* GoogleService-Info.plist in Resources */,
 				3FCB5F8B22D62995001953E9 /* Assets.xcassets in Resources */,
 				3FCB5F8922D62994001953E9 /* Main.storyboard in Resources */,
@@ -268,6 +275,7 @@
 				3F92DFD222E75A50001A08B9 /* MainController.swift in Sources */,
 				3FE3514D22E0CA84005B0612 /* AddCategoriesController.swift in Sources */,
 				3FB1B38422DCEBE800352BE7 /* SettingsController.swift in Sources */,
+				3F87179622F1F7AE00EC7B93 /* PieChartView.swift in Sources */,
 				3FCB5F8622D62994001953E9 /* CodeController.swift in Sources */,
 				3FB1B37022DCD49200352BE7 /* ForWorkingController.swift in Sources */,
 				3FCB5F9622D62F89001953E9 /* RestPassControllerViewController.swift in Sources */,

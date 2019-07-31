@@ -1768,7 +1768,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UCo-Uv-l7M"/>
         <segue reference="bAo-pG-ZSN"/>
         <segue reference="eMi-fB-E4E"/>
         <segue reference="ean-LE-w7o"/>
