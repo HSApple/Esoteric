@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F8B6DDB22EF478200B10BF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F8B6DDA22EF478200B10BF5 /* GoogleService-Info.plist */; };
+		3F87178E22F1D8AB00EC7B93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F87178D22F1D8AB00EC7B93 /* GoogleService-Info.plist */; };
 		3F92DFD222E75A50001A08B9 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1B37322DCD50400352BE7 /* MainController.swift */; };
 		3F9519C722E8BE44008000E8 /* MoreTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9519C622E8BE44008000E8 /* MoreTabController.swift */; };
 		3FAC8EC022DE13D40063DCE3 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		0F967860C2E08A65309142A3 /* Pods-schmoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schmoney.release.xcconfig"; path = "Target Support Files/Pods-schmoney/Pods-schmoney.release.xcconfig"; sourceTree = "<group>"; };
-		3F8B6DDA22EF478200B10BF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F87178D22F1D8AB00EC7B93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F9519C622E8BE44008000E8 /* MoreTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTabController.swift; sourceTree = "<group>"; };
 		3FAC8EBF22DE13D40063DCE3 /* PasscodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3FB1B36D22DCD45800352BE7 /* WorkorNahController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorNahController.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 				3FCB5F8A22D62995001953E9 /* Assets.xcassets */,
 				3FCB5F8C22D62995001953E9 /* LaunchScreen.storyboard */,
 				3FCB5F8F22D62995001953E9 /* Info.plist */,
-				3F8B6DDA22EF478200B10BF5 /* GoogleService-Info.plist */,
+				3F87178D22F1D8AB00EC7B93 /* GoogleService-Info.plist */,
 			);
 			path = schmoney;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = student;
+				ORGANIZATIONNAME = Esoteric;
 				TargetAttributes = {
 					3FCB5F7D22D62994001953E9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -209,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCB5F8E22D62995001953E9 /* LaunchScreen.storyboard in Resources */,
-				3F8B6DDB22EF478200B10BF5 /* GoogleService-Info.plist in Resources */,
+				3F87178E22F1D8AB00EC7B93 /* GoogleService-Info.plist in Resources */,
 				3FCB5F8B22D62995001953E9 /* Assets.xcassets in Resources */,
 				3FCB5F8922D62994001953E9 /* Main.storyboard in Resources */,
 			);
